@@ -67,11 +67,12 @@ body {
 /* default css end here  */
 
 /* navbar css start here  */
-.navbar{
+.navbar {
     background-color: var(--secondary-color);
 }
+
 .navbar-brand img {
-    width: 80%;
+    width: 90%;
 
 }
 
@@ -80,10 +81,11 @@ body {
     font-size: 18px;
     font-weight: 500;
     padding: 0 25px !important;
-    transition: all 0.3s ;
+    transition: all 0.3s;
     position: relative;
 }
-.navbar .nav-item a::after{
+
+.navbar .nav-item a::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -92,16 +94,19 @@ body {
     height: 5px;
     border-radius: 50%;
     background-color: #5956E8;
-   display: none;
-   transition: all 0.3s ease; 
+    display: none;
+    transition: all 0.3s ease;
 
 }
-.navbar .nav-item a:hover{
+
+.navbar .nav-item a:hover {
     color: var(--hover-color);
 }
-.navbar .nav-item a:hover::after{
-   display: block;
+
+.navbar .nav-item a:hover::after {
+    display: block;
 }
+
 .navbar-collapse .btn {
     display: inline-block;
     color: var(--secondary-color);
@@ -113,9 +118,56 @@ body {
     padding: 13px 24px;
 }
 
-.navbar-collapse .btn:hover{
+.navbar-collapse .btn:hover {
     background-color: var(--secondary-color);
     color: var(--hover-color);
     border: 1px solid var(--hover-color);
 }
+
 /* navbar css end here  */
+
+
+/* hero css start here  */
+.hero {
+    background-color: #5956E8;
+}
+
+.hero-row{
+    padding:180px 0;
+}
+.hero-left {
+    display: flex;
+    grid-area: 77px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    color: var(--secondary-color);
+    font-family: var(--font-text);
+    font-size: 65px;
+    font-weight: 700;
+    padding-bottom: 25px;
+
+}
+
+.hero-content p {
+    color: var(--secondary-color);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.hero-content .get-btn {
+    padding: 13px 22px;
+    display: inline-block;
+    border-radius: 10px;
+    background: var(--secondary-color);
+    color: #5956E8;
+}
+
+
+.hero-right img{
+width: 90%;
+}
+/* hero css end here  */
