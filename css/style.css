@@ -1,4 +1,3 @@
-
 /* 
 *******************************************
  Theme Name: Creative Agency Landing page
@@ -10,47 +9,113 @@
 */
 
 
-:root{
-    --font-color:rgba(24, 24, 24, 0.70);
-    --secondary-font-color:#FFFEFE;
-    --font-text:'Inter', sans-serif;
-    --hover-color:#5956E8;
+:root {
+    --font-color: rgba(24, 24, 24, 0.70);
+    --secondary-color: #FFFEFE;
+    --font-text: 'Inter', sans-serif;
+    --hover-color: #5956E8;
     --primary-gradient: linear-gradient(0deg, #5956E8 -1.13%, rgba(255, 255, 255, 0.00) 58.11%);
 }
- /* default css start here  */
-*{
-margin: 0;
-padding: 0;
-}
-a{
-    text-decoration: none;
-}
-ul{
+
+/* default css start here  */
+* {
     margin: 0;
     padding: 0;
 }
-li{
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
     list-style-type: none;
 }
-img{
+
+img {
     vertical-align: middle;
 }
-h1{
+
+h1 {
     font-size: 65px;
 }
-h2{
+
+h2 {
     font-size: 40px;
 }
-h3{
+
+h3 {
     font-size: 30px;
 }
-h4{
+
+h4 {
     font-size: 20px;
 }
-h5{
+
+h5 {
     font-size: 18px;
 }
-body{
+
+body {
     font-family: var(--font-text);
 }
+
 /* default css end here  */
+
+/* navbar css start here  */
+.navbar{
+    background-color: var(--secondary-color);
+}
+.navbar-brand img {
+    width: 80%;
+
+}
+
+.navbar .nav-item a {
+    font-family: var(--font-text);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 25px !important;
+    transition: all 0.3s ;
+    position: relative;
+}
+.navbar .nav-item a::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #5956E8;
+   display: none;
+   transition: all 0.3s ease; 
+
+}
+.navbar .nav-item a:hover{
+    color: var(--hover-color);
+}
+.navbar .nav-item a:hover::after{
+   display: block;
+}
+.navbar-collapse .btn {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    background: #5956E8;
+    padding: 13px 24px;
+}
+
+.navbar-collapse .btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+}
+/* navbar css end here  */
