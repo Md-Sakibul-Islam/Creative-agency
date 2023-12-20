@@ -1,0 +1,56 @@
+
+/* 
+*******************************************
+ Theme Name: Creative Agency Landing page
+ Owner: Md Sakibul Islam
+ Version: 1.0
+
+ *******************************************
+
+*/
+
+
+:root{
+    --font-color:rgba(24, 24, 24, 0.70);
+    --secondary-font-color:#FFFEFE;
+    --font-text:'Inter', sans-serif;
+    --hover-color:#5956E8;
+    --primary-gradient: linear-gradient(0deg, #5956E8 -1.13%, rgba(255, 255, 255, 0.00) 58.11%);
+}
+ /* default css start here  */
+*{
+margin: 0;
+padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+h1{
+    font-size: 65px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 18px;
+}
+body{
+    font-family: var(--font-text);
+}
+/* default css end here  */
