@@ -11,6 +11,7 @@
 
 :root {
     --font-color: rgba(24, 24, 24, 0.70);
+    --heading-color: #181818;
     --secondary-color: #FFFEFE;
     --font-text: 'Inter', sans-serif;
     --hover-color: #5956E8;
@@ -53,10 +54,14 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h5 {
+    font-size: 20px;
+}
+
+h6 {
     font-size: 18px;
 }
 
@@ -132,9 +137,10 @@ body {
     background-color: #5956E8;
 }
 
-.hero-row{
-    padding:180px 0;
+.hero-row {
+    padding: 180px 0;
 }
+
 .hero-left {
     display: flex;
     grid-area: 77px;
@@ -167,7 +173,76 @@ body {
 }
 
 
-.hero-right img{
-width: 90%;
+.hero-right img {
+    width: 90%;
 }
+
 /* hero css end here  */
+
+/* services css start here  */
+.services {
+    padding: 100px 0;
+}
+
+.services-content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.services-content h2 {
+    color: var(--heading-color);
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.services-content p {
+    color: var(--font-color);
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 400;
+    width: 542px;
+    margin: auto;
+}
+
+.service-card {
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 0.5px solid #E3E3E3;
+    background: #FFF;
+    padding: 63px 48px;
+    transition: all 0.3s;
+}
+.service-card:hover{
+border-radius: 10px;
+border: 1px solid #000;
+background: #FFF;
+box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+
+.service-card img {
+    padding: 17px;
+    border-radius: 10px;
+    border: 0.5px solid #5956E8;
+    margin-bottom: 30px;
+}
+
+.service-card h5 {
+    color: var(--heading-color);
+    font-family: var(--font-text);
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.service-card p {
+    color: var(--font-color);
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+/* services css end here  */
