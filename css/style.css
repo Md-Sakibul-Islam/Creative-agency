@@ -215,11 +215,12 @@ body {
     padding: 63px 48px;
     transition: all 0.3s;
 }
-.service-card:hover{
-border-radius: 10px;
-border: 1px solid #000;
-background: #FFF;
-box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+
+.service-card:hover {
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
 }
 
 .service-card img {
@@ -246,3 +247,66 @@ box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
 }
 
 /* services css end here  */
+
+/* work portfolio section start here  */
+.portfolio-content {
+    text-align: center;
+}
+
+.portfolio-content h2 {
+    color: var(--heading-color);
+    font-family: var(--font-text);
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.portfolio-content p {
+    width: 542px;
+    margin: auto;
+    color: var(--font-color);
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.portfolio-card {
+    position: relative;
+    margin-top: 30px;
+
+
+}
+
+.portfolio-hover {
+    visibility: hidden;
+    position: absolute;
+    bottom: 19px;
+    left: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #5956E8;
+    padding: 20px 40px 20px 40px;
+    transition: all 0.3s;
+}
+
+.portfolio-card:hover .portfolio-hover {
+    visibility: visible;
+
+}
+
+.portfolio-hover h5 {
+    color: #FFF;
+    font-family: var(--font-text);
+    font-weight: 600;
+}
+
+.portfolio-hover a {
+    color: #FFF;
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* work portfolio section end here  */
